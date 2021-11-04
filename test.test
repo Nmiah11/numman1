@@ -1,0 +1,5 @@
+Scenario: The account balance is £0, when a customer makes a transaction of £10, the balance on the account should be -£10
+
+Current Balance: 0.00
+Transaction: £10
+Expected balance: -£10.00
