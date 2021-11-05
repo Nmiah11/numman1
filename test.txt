@@ -22,3 +22,10 @@ Scenario =
 3) Request goes back to sender
 4) once the sender gets the response, they create a report on the back of it. 
 5) the report is sent out and statement is generated. 
+
+User Acceptance test:
+Given a customer makes a transaction of £10,
+When the balance on the accountis £0 and there is an overdraft set up on the account,
+Then the transaction should be succesfull and the account should be debited with £10.
+
+
