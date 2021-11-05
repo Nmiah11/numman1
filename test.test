@@ -3,3 +3,13 @@ Scenario: The account balance is £0, when a customer makes a transaction of £1
 Current Balance: 0.00
 Transaction: £10
 Expected balance: -£10.00
+
+Integration test:
+
+A seperate system will send an api request to debit the account for £10.
+
+The banking system will then debit the account.
+
+The banking system will send a respone back to the requestor to say its succesfull.
+
+The requesting system will get the response and act accordingly. 
