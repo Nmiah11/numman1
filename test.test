@@ -6,10 +6,19 @@ Expected balance: -£10.00
 
 Integration test:
 
-A seperate system will send an api request to debit the account for £10.
+A seperate system will send an api (POST) request to debit the account for £10.
 
 The banking system will then debit the account.
 
 The banking system will send a respone back to the requestor to say its succesfull.
 
-The requesting system will get the response and act accordingly. 
+The requesting system will get the response and act accordingly.
+
+System test:
+
+Scenario = 
+1) POST API to update account
+2) Account is updated
+3) Request goes back to sender
+4) once the sender gets the response, they create a report on the back of it. 
+5) the report is sent out and statement is generated. 
